@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 96
+  controlID: 9
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 97
+  controlID: 10
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 98
+  controlID: 11
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -360,19 +360,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefab
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 73
   m_LastFolders:
-  - Assets/Prefab
+  - Assets/Scripts
   m_LastFoldersGridSize: 73
   m_LastProjectPath: C:\Users\phill\Desktop\code\unity-shoot-basics\Nurf Bang
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b2280000
-    m_LastClickedID: 10418
-    m_ExpandedIDs: 000000001e280000002900002a2900005e2a0000882a0000be2b0000c02b0000c22b0000c42b0000c62b000000ca9a3bffffff7f
+    m_SelectedIDs: ee2b0000
+    m_LastClickedID: 11246
+    m_ExpandedIDs: 000000001e280000002900002a290000642a00008e2a0000d82b0000da2b0000dc2b0000de2b0000e02b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -400,7 +400,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001e280000002900002a290000442900005e2a0000882a0000be2b0000c02b0000c22b0000c42b0000c62b0000
+    m_ExpandedIDs: 000000001e280000002900002a290000642a00008e2a0000d82b0000da2b0000dc2b0000de2b0000e02b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -518,9 +518,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 10fbffff
-    m_LastClickedID: -1264
-    m_ExpandedIDs: 96fbffff00000000022b0000
+    m_SelectedIDs: f82b0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 96fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -604,11 +604,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.06872681, y: 0.8157726, z: -0.09910681, w: 0.56567204}
     speed: 2
-    m_Value: {x: 0.06872629, y: 0.8157664, z: -0.09910606, w: 0.56566775}
+    m_Value: {x: 0.0687268, y: 0.8157726, z: -0.0991068, w: 0.56567204}
   m_Size:
-    m_Target: 30.415316
+    m_Target: 49.732666
     speed: 2
-    m_Value: 30.415316
+    m_Value: 49.732666
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -667,7 +667,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1
