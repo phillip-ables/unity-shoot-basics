@@ -124,8 +124,9 @@ GameObject:
   - component: {fileID: 15324009}
   - component: {fileID: 15324008}
   - component: {fileID: 15324007}
+  - component: {fileID: 15324011}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,6 +200,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 25, z: 0}
+--- !u!114 &15324011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 15324006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 263bd0b4411166b43b24727547635923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &121018131 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4064999698571380, guid: 2707adb0e3488d144b7d296004d1461a,
@@ -693,8 +705,9 @@ GameObject:
   - component: {fileID: 1342213045}
   - component: {fileID: 1342213044}
   - component: {fileID: 1342213043}
+  - component: {fileID: 1342213046}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: PlayerCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -707,7 +720,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1342213041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 15324010}
@@ -763,6 +776,17 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1342213046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1342213041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 091edfe6b3dd0e74cb37ede5d8c8d401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1361121540
 Prefab:
   m_ObjectHideFlags: 0
