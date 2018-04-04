@@ -8,10 +8,15 @@ public class PlayerLook : MonoBehaviour {
     //controls the speed at which we rotate when we move the mouse
     public float mouseSensitivity;
 
+    //lock the mouse cursor to the center of the screen so that it cannot move
+    void Awake()//only called once for each game object
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+
     void Update()
     {
-
-
         RotateCamera();
     }
 
