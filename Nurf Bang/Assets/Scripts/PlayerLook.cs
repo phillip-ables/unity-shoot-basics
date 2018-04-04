@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerLook : MonoBehaviour {
-
+    public Transform playerBody;
     //new class scope variable, public so we can interact directly in the inspector
-    //controls the speed at which we rotate when we move the mouse
     public float mouseSensitivity;
+
 
     //lock the mouse cursor to the center of the screen so that it cannot move
     void Awake()//only called once for each game object
