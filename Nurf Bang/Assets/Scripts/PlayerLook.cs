@@ -22,8 +22,8 @@ public class PlayerLook : MonoBehaviour {
         float MouseY = Input.GetAxis("Mouse Y");
 
         //mouseSensitivity as a multiplier
-        float rotAmountX = MouseX * mouseSensitivity;
-        float rotAmountY = MouseY * mouseSensitivity;
+        float rotAmountY = MouseX * mouseSensitivity;
+        float rotAmountX = MouseY * mouseSensitivity;
 
         //extract the current rotation of the game object
         Vector3 targetRot = transform.rotation.eulerAngles;
