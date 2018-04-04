@@ -30,7 +30,7 @@ public class PlayerLook : MonoBehaviour {
         float rotAmountY = MouseX * mouseSensitivity;
         float rotAmountX = MouseY * mouseSensitivity;
 
-        xAxisClamp += rotAmountY;
+        xAxisClamp -= rotAmountY;
 
         Vector3 targetRotCam = transform.rotation.eulerAngles;
         Vector3 targetRotBody = playerBody.rotation.eulerAngles;
@@ -39,7 +39,11 @@ public class PlayerLook : MonoBehaviour {
         targetRotCam.z = 0;
         targetRotBody.y += rotAmountY;
 
-        if(xAxisClamp > 90) { xAxisClamp = targetRotCam.x = 90;  }
+        if(xAxisClamp > 90)
+        {
+            xAxisClamp = 90;
+            targetRotCam.x = 90;
+        }
         if(xAxisClamp < -90) { xAxisClamp = targetRotCam.x = -90; }
 
         //transform.rotation is a quaternion and we use Euler angles to tranform it with vectors
