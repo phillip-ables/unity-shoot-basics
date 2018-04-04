@@ -12,6 +12,11 @@ public class PlayerMove : MonoBehaviour
     }
     void Update()
     {
-        
+        MovePlayer();
+    }
+
+    void MovePlayer()
+    {
+
     }
 }
