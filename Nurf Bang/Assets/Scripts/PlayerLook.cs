@@ -30,11 +30,13 @@ public class PlayerLook : MonoBehaviour {
         float rotAmountY = MouseX * mouseSensitivity;
         float rotAmountX = MouseY * mouseSensitivity;
 
-        //extract the current rotation of the game object
-        Vector3 targetRot = transform.rotation.eulerAngles;
-        targetRot.x -= rotAmountX;
-        targetRot.y += rotAmountY;
+        Vector3 targetRotBody = playerBody.rotation.eulerAngles;
+        Vector3 targetRotCam = transform.rotation.eulerAngles;
+
+        targetRotBody.y = rotAmountY;
+        targetRotCam.x -= rotAmountX;
         //transform.rotation is a quaternion and we use Euler angles to tranform it with vectors
-        transform.rotation = Quaternion.Euler(targetRot);
+        playerBody.rotation = Quaternion.Euler(targetRotBody);
+        transform.rotation = Quaternion.Euler(targetRotCam);
     }
 }
