@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 15324008}
   - component: {fileID: 15324007}
   - component: {fileID: 15324011}
+  - component: {fileID: 15324012}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -211,6 +212,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 263bd0b4411166b43b24727547635923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!143 &15324012
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 15324006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &121018131 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4064999698571380, guid: 2707adb0e3488d144b7d296004d1461a,
