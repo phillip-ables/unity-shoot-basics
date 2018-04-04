@@ -9,7 +9,7 @@ public class PlayerLook : MonoBehaviour {
 
 
     //lock the mouse cursor to the center of the screen so that it cannot move
-    void Awake()//only called once for each game object
+    void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -22,7 +22,6 @@ public class PlayerLook : MonoBehaviour {
 
     void RotateCamera()
     {
-        //declare two variables
         float MouseX = Input.GetAxis("Mouse X");
         float MouseY = Input.GetAxis("Mouse Y");
 
@@ -34,6 +33,8 @@ public class PlayerLook : MonoBehaviour {
         Vector3 targetRotBody = playerBody.rotation.eulerAngles;
 
         targetRotCam.x -= rotAmountX;
+        targetRotCam.z = 0;
+
         targetRotBody.y += rotAmountY;
         //transform.rotation is a quaternion and we use Euler angles to tranform it with vectors
         transform.rotation = Quaternion.Euler(targetRotCam);
