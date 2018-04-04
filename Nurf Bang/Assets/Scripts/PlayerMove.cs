@@ -6,6 +6,8 @@ public class PlayerMove : MonoBehaviour
 {
     public CharacterController charController;
 
+    public float walkSpeed;
+
     void Awake()
     {
         charController = GetComponent<CharacterController>();
@@ -17,6 +19,9 @@ public class PlayerMove : MonoBehaviour
 
     void MovePlayer()
     {
+        float horiz = Input.GetAxis("Horizontal");
+        float vert = Input.GetAxis("Vertical");
+
 
     }
 }
