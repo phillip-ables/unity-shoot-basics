@@ -39,12 +39,12 @@ public class PlayerLook : MonoBehaviour {
         targetRotCam.z = 0;
         targetRotBody.y += rotAmountY;
 
-        if(xAxisClamp > 90)
+        if(xAxisClamp >= 90)
         {
             xAxisClamp = 90;
             targetRotCam.x = 90;
         }
-        if(xAxisClamp < -90) { xAxisClamp = targetRotCam.x = -90; }
+        if(xAxisClamp <= -90) { xAxisClamp = targetRotCam.x = -90; }
 
         //transform.rotation is a quaternion and we use Euler angles to tranform it with vectors
         transform.rotation = Quaternion.Euler(targetRotCam);

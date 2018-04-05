@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    public CharacterController charController;
+    CharacterController charController;
 
     public float walkSpeed;
+
+    //which layers we want to look out for:
+    public LayerMask groundLayers;
+    public float jumpForce = 7;  // how high we want to jump
+    public CapsuleCollider col;
+
 
     void Awake()
     {
         charController = GetComponent<CharacterController>();
+        col = GetComponent<CapsuleCollider>();
     }
     void Update()
     {
@@ -24,5 +31,8 @@ public class PlayerMove : MonoBehaviour
 
         Vector3 moveDirSide = transform.right * horiz * walkSpeed;
         Vector3 moveDirForward = transform.forward * vert * walkSpeed;
+
+        charController.SimpleMove(moveDirForward);
+        charController.SimpleMove(moveDirSide);
     }
 }

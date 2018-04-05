@@ -3,3 +3,5 @@ i was doing this tutorial
 but needed to learn how to make a 
 first person fps rigid body controller
 	https://www.youtube.com/watch?v=qHvT9TfFDSk
+jump tutorial
+	https://www.youtube.com/watch?v=vdOFUFMiPDU
