@@ -24,6 +24,11 @@ public class PlayerMotor : MonoBehaviour {
                 verticalVelocity = jumpForce;
             }
         }
+        else
+        {
+            verticalVelocity -= gravity * Time.deltaTime;
+        }
 
+        Vector3 moveVector = new Vector3(0 , verticalVelocity,0);
     }
 }
