@@ -8,6 +8,7 @@ public class PlayerMotor : MonoBehaviour {
     private float verticalVelocity;
     private float gravity = 14.0f;
     private float jumpForce = 10.0f;
+    private float speed = 5.0f;
 
     private void Start()
     {
@@ -29,6 +30,10 @@ public class PlayerMotor : MonoBehaviour {
             verticalVelocity -= gravity * Time.deltaTime;
         }
 
-        Vector3 moveVector = new Vector3(0 , verticalVelocity,0);
+        Vector3 moveVector = Vector3.zero;
+        moveVector.x = Input.GetAxis("Horizontal") * speed;
+        moveVector.y = verticalVelocity;
+        moveVector.z = Input.GetAxis("Vertical") * speed;
+        controller.Move(moveVector * Time.deltaTime);
     }
 }
