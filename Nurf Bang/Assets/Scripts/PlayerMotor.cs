@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMotor : MonoBehaviour {
-    private CharacterController character;
+    private CharacterController controller;
 
     private float verticalVelocity;
     private float gravity = 14.0f;
@@ -11,6 +11,19 @@ public class PlayerMotor : MonoBehaviour {
 
     private void Start()
     {
-        character = GetComponent<CharacterController>();
+        controller = GetComponent<CharacterController>();
+    }
+
+    private void Update()
+    {
+        if (controller.isGrounded)
+        {
+            verticalVelocity -= gravity * Time.deltaTime;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                verticalVelocity = jumpForce;
+            }
+        }
+
     }
 }
