@@ -11,4 +11,14 @@ public class HunchController : MonoBehaviour {
     private Rigidbody rbHunch;
     //Transform transCam;
 
+    private void Start()
+    {
+        rbHunch = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void Update()
+    {
+        rbHunch.transform.position += Vector3.forward;
+    }
 }
