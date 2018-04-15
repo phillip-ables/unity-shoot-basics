@@ -16,6 +16,8 @@ public class SphereControllerTransform : MonoBehaviour {
         float moveAxis = Input.GetAxis(moveInputAxis);
         float turnAxis = Input.GetAxis(turnInputAxis);
 
+        ApplyInput(moveAxis, turnAxis);
+
     }
 
     private void ApplyInput(float moveInput,
