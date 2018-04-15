@@ -258,6 +258,7 @@
     <Compile Include="Assets\Scripts\DontWork\PlayerLook.cs" />
     <Compile Include="Assets\Scripts\DontWork\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
+    <Compile Include="Assets\SphereControllerRigidBody.cs" />
     <Compile Include="Assets\SphereControllerTransform.cs" />
   </ItemGroup>
   <ItemGroup>
