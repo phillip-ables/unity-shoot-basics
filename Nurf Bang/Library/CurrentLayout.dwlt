@@ -324,19 +324,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefab
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefab
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\phill\Desktop\code\unity-shoot-basics\Nurf Bang
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 862a0000
-    m_LastClickedID: 10886
-    m_ExpandedIDs: 00000000e8290000582c000000ca9a3bffffff7f
+    m_SelectedIDs: ea290000
+    m_LastClickedID: 10730
+    m_ExpandedIDs: 00000000ea2900005a2c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -364,7 +364,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e8290000582c0000
+    m_ExpandedIDs: 00000000ea2900005a2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.030855296, y: -0.73135597, z: 0.033159547, w: -0.68049955}
     speed: 2
-    m_Value: {x: -0.0308551, y: -0.7313513, z: 0.033159338, w: -0.68049526}
+    m_Value: {x: 0.030855296, y: 0.731356, z: -0.033159547, w: 0.6804996}
   m_Size:
     m_Target: 5.6649003
     speed: 2
@@ -602,9 +602,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 54f6ffff
-    m_LastClickedID: -2476
-    m_ExpandedIDs: bce8ffff54f6ffff96fbffff00000000fc2c0000
+    m_SelectedIDs: ee2c0000
+    m_LastClickedID: 11502
+    m_ExpandedIDs: 96fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
