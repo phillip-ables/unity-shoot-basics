@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HunchController : MonoBehaviour {
+    public float moveSpeed = 5.0f;
+    public float turnSpeed = 20.0f;
+    public float jumpForce = 18.0f;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private Vector3 velHunch;
+    private Rigidbody rbHunch;
+    //Transform transCam;
+
 }
