@@ -15,3 +15,7 @@ jump tutorial
 Next tutorial: uses charachter controller component
 jump and move
 	https://www.youtube.com/watch?v=miMCu5796KM
+	saved as prefab simple floating charachter
+
+Rigid body charachter controller
+	https://www.youtube.com/watch?v=blO039OzUZc&t=81s
