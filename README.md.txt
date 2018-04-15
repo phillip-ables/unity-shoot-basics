@@ -20,6 +20,11 @@ jump and move
 Rigid body charachter controller
 	https://www.youtube.com/watch?v=blO039OzUZc&t=81s
 
-I liked this guys tutorial 
+I liked this guys code style
 player object a sphere
+made with controller and rigid body
+	two prefabs
 	https://www.youtube.com/watch?v=3uOdm2wt43E
+
+last fps tutorial of the day
+	https://www.youtube.com/watch?v=Ov9ekwAGhMA&t=69s
