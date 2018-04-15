@@ -2,15 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SphereControllerRigidBody : MonoBehaviour {
+public class SphereControllerRigidBody : MonoBehaviour
+{
+    private string moveInputAxis = "Vertical";
+    private string turnInputAxis = "Horizontal";
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public float rotationRate = 360;
+
+    public float moveSpeed = 10;
+
+    private Rigidbody rb;
+
+    #region Monobehaviour API
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    {
+        float moveAxis = Input.GetAxis(moveInputAxis);
+        float turnAxis = Input.GetAxis(turnInputAxis);
+
+        ApplyInput(moveAxis, turnAxis);
+
+    }
+
+    private void ApplyInput(float moveInput,
+                            float turnInput)
+    {
+        Move(moveInput);
+        Turn(turnInput);
+    }
+
+    private void Move(float input)
+    {
+        rb.AddForce(transform.forward * input * moveSpeed, ForceMode.Force);
+    }
+
+    private void Turn(float input)
+    {
+        transform.Rotate(0, input * rotationRate * Time.deltaTime, 0);
+    }
+
+    #endregion
 }
