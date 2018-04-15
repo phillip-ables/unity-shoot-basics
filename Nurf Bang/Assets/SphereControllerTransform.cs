@@ -29,12 +29,12 @@ public class SphereControllerTransform : MonoBehaviour {
 
     private void Move(float input)
     {
-
+        transform.Translate(Vector3.forward * input * moveSpeed);
     }
 
     private void Turn(float input)
     {
-
+        transform.Rotate(0, input * rotationRate * Time.deltaTime, 0);
     }
 
     #endregion
