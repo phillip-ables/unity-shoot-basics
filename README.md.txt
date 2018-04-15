@@ -19,3 +19,7 @@ jump and move
 
 Rigid body charachter controller
 	https://www.youtube.com/watch?v=blO039OzUZc&t=81s
+
+I liked this guys tutorial 
+player object a sphere
+	https://www.youtube.com/watch?v=3uOdm2wt43E
