@@ -3,45 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HunchController : MonoBehaviour {
-    public float moveSpeed = 5.0f;
-    public float turnSpeed = 20.0f;
-    public float jumpForce = 18.0f;
-
-    private float horizontalInput;
-    private float verticalInput;
-    private float mouseX;
-    private float mouseY;
-    private Vector3 velHunch;
-    private Rigidbody rbHunch;
-    //Transform transCam;
+    public float speed = 20.0f;
 
     private void Start()
     {
-        rbHunch = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
+        float translation = Input.GetAxis("Horizontal") * speed;
+        float straffe = Input.GetAxis("Vertical") * speed;
+        translation *= Time.deltaTime;
+        straffe *= Time.deltaTime;
 
-        mouseX = Input.GetAxis("Mouse X");
-        mouseY = Input.GetAxis("Mouse Y");
+        transform.Translate(straffe, 0, -translation);
 
-        velHunch = rbHunch.velocity;
-        velHunch.x = horizontalInput * moveSpeed * Time.deltaTime;
-        velHunch.y = verticalInput * moveSpeed * Time.deltaTime;
-
-        if (Input.GetButtonDown("space"))
-            velHunch.z = jumpForce;
-
-        if (Input.GetButtonDown("escape"))
+        if (Input.GetKeyDown("escape"))
             Cursor.lockState = CursorLockMode.None;
-    }
-
-    private void LateUpdate()
-    {
-        rbHunch.velocity = velHunch;
+        
     }
 }
