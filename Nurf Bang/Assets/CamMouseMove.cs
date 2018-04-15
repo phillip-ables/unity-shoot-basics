@@ -10,6 +10,7 @@ public class CamMouseMove : MonoBehaviour
     public float smoothing = 2.0f;
 
     GameObject character;
+    Rigidbody rbHunch;
 
     private void Start()
     {
