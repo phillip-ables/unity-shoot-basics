@@ -28,3 +28,13 @@ made with controller and rigid body
 
 last fps tutorial of the day
 	https://www.youtube.com/watch?v=Ov9ekwAGhMA&t=69s
+
+new scene
+working on rotation
+	https://www.youtube.com/watch?v=KJ7yT7KGuMM
+
+
+
+
+
+
