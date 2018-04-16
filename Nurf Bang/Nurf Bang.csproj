@@ -254,6 +254,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\LerpRotation.cs" />
+    <Compile Include="Assets\RotationExample.cs" />
     <Compile Include="Assets\Scripts\CamMouseMove.cs" />
     <Compile Include="Assets\Scripts\CharacterControls.cs" />
     <Compile Include="Assets\Scripts\DontWork\PlayerLook.cs" />
