@@ -255,6 +255,7 @@
   <ItemGroup>
     <Compile Include="Assets\CamMouseMove.cs" />
     <Compile Include="Assets\CharacterControls.cs" />
+    <Compile Include="Assets\HeadMouseMove.cs" />
     <Compile Include="Assets\HunchController.cs" />
     <Compile Include="Assets\Scripts\DontWork\PlayerLook.cs" />
     <Compile Include="Assets\Scripts\DontWork\PlayerMove.cs" />
