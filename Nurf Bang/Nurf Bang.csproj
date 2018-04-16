@@ -253,15 +253,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CamMouseMove.cs" />
-    <Compile Include="Assets\CharacterControls.cs" />
-    <Compile Include="Assets\HeadMouseMove.cs" />
-    <Compile Include="Assets\HunchController.cs" />
+    <Compile Include="Assets\LerpRotation.cs" />
+    <Compile Include="Assets\Scripts\CamMouseMove.cs" />
+    <Compile Include="Assets\Scripts\CharacterControls.cs" />
     <Compile Include="Assets\Scripts\DontWork\PlayerLook.cs" />
     <Compile Include="Assets\Scripts\DontWork\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\EditTestMode.cs" />
+    <Compile Include="Assets\Scripts\HeadMouseMove.cs" />
+    <Compile Include="Assets\Scripts\HunchController.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
-    <Compile Include="Assets\SphereControllerRigidBody.cs" />
-    <Compile Include="Assets\SphereControllerTransform.cs" />
+    <Compile Include="Assets\Scripts\SphereControllerRigidBody.cs" />
+    <Compile Include="Assets\Scripts\SphereControllerTransform.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
