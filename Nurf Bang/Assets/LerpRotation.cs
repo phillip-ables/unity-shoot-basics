@@ -12,8 +12,10 @@ public class LerpRotation : MonoBehaviour
     void Update()
     {
         //targeting phase 
+        relativePosition = player.position - transform.position;
+        targetRotation = Quaternion.LookRotation(relativePosition);
 
-        
+
         //and a transition phase
 
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.time * speed);
