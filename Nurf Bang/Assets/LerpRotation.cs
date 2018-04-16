@@ -12,13 +12,14 @@ public class LerpRotation : MonoBehaviour
 
     void Update()
     {
-        //targeting phase 
-        relativePosition = player.position - gun.position;
-        targetRotation = Quaternion.LookRotation(relativePosition);
-
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //targeting phase 
+            relativePosition = player.position - gun.position;
+            targetRotation = Quaternion.LookRotation(relativePosition);
+        }
+        
         //and a transition phase
-
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.time * speed);
     }
 
