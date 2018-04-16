@@ -31,7 +31,12 @@ last fps tutorial of the day
 
 new scene
 working on rotation
+
+lerp for target aim
 	https://www.youtube.com/watch?v=KJ7yT7KGuMM
+
+had a few cool objectives
+	https://www.youtube.com/watch?v=3RQmzVGI8tQ
 
 
 

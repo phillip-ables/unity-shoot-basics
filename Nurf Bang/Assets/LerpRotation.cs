@@ -10,6 +10,8 @@ public class LerpRotation : MonoBehaviour
     public Transform gun;
     public float speed = 0.1F;
     private bool rotating = false;
+    private float rotationTime;
+    
 
     void Update()
     {
@@ -19,14 +21,19 @@ public class LerpRotation : MonoBehaviour
             relativePosition = player.position - gun.position;
             targetRotation = Quaternion.LookRotation(relativePosition);
             rotating = true;
+            rotationTime = 0.0f;
         }
 
 
         if (rotating)
         {
             //and a transition phase
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.time * speed);
+            rotationTime += Time.deltaTime * speed;
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationTime);
         }
+
+        if (rotationTime > 1)
+            rotating = false;
     }
 
 }
