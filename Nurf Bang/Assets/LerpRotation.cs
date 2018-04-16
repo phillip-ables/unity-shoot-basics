@@ -7,12 +7,13 @@ public class LerpRotation : MonoBehaviour
     Quaternion targetRotation;
 
     public Transform player;
+    public Transform gun;
     public float speed = 0.1F;
 
     void Update()
     {
         //targeting phase 
-        relativePosition = player.position - transform.position;
+        relativePosition = player.position - gun.position;
         targetRotation = Quaternion.LookRotation(relativePosition);
 
 
