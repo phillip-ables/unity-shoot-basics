@@ -3,11 +3,20 @@ using System.Collections;
 
 public class LerpRotation : MonoBehaviour
 {
-    public Transform from;
-    public Transform to;
+    Vector3 relativePosition; // the difference in space
+    Quaternion targetRotation;
+
+    public Transform player;
     public float speed = 0.1F;
+
     void Update()
     {
-        transform.rotation = Quaternion.Lerp(from.rotation, to.rotation, Time.time * speed);
+        //targeting phase 
+
+        
+        //and a transition phase
+
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.time * speed);
     }
+
 }
