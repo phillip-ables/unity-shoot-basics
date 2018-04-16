@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class RotationExample : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private void Start()
+    {
+        transform.rotation = Quaternion.Euler(0, 0, 0);
+    }
 }
