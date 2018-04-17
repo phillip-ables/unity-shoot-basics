@@ -253,15 +253,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BlockBAutoLook.cs" />
-    <Compile Include="Assets\LerpRotation.cs" />
-    <Compile Include="Assets\RotationExample.cs" />
+    <Compile Include="Assets\Scripts\BlockAController.cs" />
+    <Compile Include="Assets\Scripts\BlockBAutoLook.cs" />
     <Compile Include="Assets\Scripts\CamMouseMove.cs" />
     <Compile Include="Assets\Scripts\CharacterControls.cs" />
     <Compile Include="Assets\Scripts\DontWork\PlayerLook.cs" />
     <Compile Include="Assets\Scripts\DontWork\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\HeadMouseMove.cs" />
     <Compile Include="Assets\Scripts\HunchController.cs" />
+    <Compile Include="Assets\Scripts\LerpRotation.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\SphereControllerRigidBody.cs" />
     <Compile Include="Assets\Scripts\SphereControllerTransform.cs" />
