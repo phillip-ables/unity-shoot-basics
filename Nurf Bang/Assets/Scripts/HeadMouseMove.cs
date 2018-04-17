@@ -11,7 +11,6 @@ public class HeadMouseMove : MonoBehaviour
 
     GameObject charHump;
     Rigidbody rbHunch;
-    public Transform tranNeck;
 
     private void Start()
     {
@@ -30,7 +29,8 @@ public class HeadMouseMove : MonoBehaviour
         mouseLook.y = Mathf.Clamp(mouseLook.y, -90f, 90f);
 
 
-        transform.rotation  *= Quaternion.AngleAxis(-mouseLook.y, this.transform.right);
+
+        //transform.rotation  *= Quaternion.Euler(new Vector3(0,0,-mouseLook.y));
         //transform.eulerAngles = new Vector3(-mouseLook.y, 0f, 0f);
         charHump.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, charHump.transform.up);
     }
