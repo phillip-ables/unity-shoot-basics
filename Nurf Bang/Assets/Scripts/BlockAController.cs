@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class BlockAController : MonoBehaviour
 {
-    public float speed = 15.0f;
+    public float speed =  0.3f;
     public float jumpForce = 15.0f;
-    public float rotSpeed = 20.0f;
+    public float rotSpeed = 10.0f;
     Vector3 playerMove;
     GameObject blockA;
 
@@ -21,15 +21,21 @@ public class BlockAController : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
 
-        transform.localEulerAngles = new Vector3(transform.localEulerAngles.x + mouseY * rotSpeed,
-                                                transform.localEulerAngles.y + mouseX * rotSpeed,
+        float playerLook = transform.localEulerAngles.x + mouseY * rotSpeed / Time.deltaTime;
+        playerLook = Mathf.Clamp(playerLook,-90,90);
+        transform.localEulerAngles = new Vector3(playerLook,
+                                                0.0f,
                                                 0.0f);
 
-        playerMove = blockA.transform.position;
-        playerMove.x += Input.GetAxis("Horizontal") * speed;
-        playerMove.z += Input.GetAxis("Vertical") * speed;
+        blockA.transform.localEulerAngles = new Vector3(0.0f,
+                                                        blockA.transform.localEulerAngles.y + mouseX * rotSpeed / Time.deltaTime,
+                                                        0.0f);
 
-        if (Input.GetKeyDown(KeyCode.Space) && playerMove.y < jumpForce)
+        playerMove = blockA.transform.position;
+        playerMove.x += Input.GetAxis("Horizontal") * speed / Time.deltaTime;
+        playerMove.z += Input.GetAxis("Vertical") * speed / Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             playerMove.y = jumpForce;
             Debug.Log("JUMP!!");
