@@ -22,6 +22,6 @@ public class Shooting : MonoBehaviour {
 
     public void Fire()
     {
-
+        Instantiate(bullet.transform, bulletSpawn.transform.position, Quaternion.identity);
     }
 }

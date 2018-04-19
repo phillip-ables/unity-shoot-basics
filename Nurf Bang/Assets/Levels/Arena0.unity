@@ -881,6 +881,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7617c852a77d584cb4365354566eb18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 1472765608179406, guid: 487a62814aa3f86439574255296b4d03, type: 2}
+  bulletSpawn: {fileID: 1182206605}
+  fireRate: 0
 --- !u!4 &1291160624 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4658927753189536, guid: 58f11458308db5342bc7ccdc3c952adb,
