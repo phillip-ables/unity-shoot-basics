@@ -7,6 +7,7 @@ public class Shooting : MonoBehaviour {
     public GameObject bulletSpawn;
     public float fireRate;
 
+    private Transform _bullet;
 
 	void Start () {
 		
@@ -22,6 +23,6 @@ public class Shooting : MonoBehaviour {
 
     public void Fire()
     {
-        Instantiate(bullet.transform, bulletSpawn.transform.position, Quaternion.identity);
+        _bullet = Instantiate(bullet.transform, bulletSpawn.transform.position, Quaternion.identity);
     }
 }
