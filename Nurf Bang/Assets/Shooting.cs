@@ -3,14 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Shooting : MonoBehaviour {
+    public GameObject bullet;
+    public GameObject bulletSpawn;
+    public float fireRate;
 
-	// Use this for initialization
+
 	void Start () {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+        if (Input.GetMouseButton(0))// left mouse button
+        {
+            Fire();
+        }		
 	}
+
+    public void Fire()
+    {
+
+    }
 }
