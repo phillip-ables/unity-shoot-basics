@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class HunchBotEnemy : MonoBehaviour
 {
-    private void Update()
-    {
-        
-    }
 
-    private void OnTriggerEnter(Collider other)
+    public float health;
+
+    private void Update()
     {
         
     }

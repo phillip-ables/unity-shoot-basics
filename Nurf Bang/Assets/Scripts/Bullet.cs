@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
     public float damage;
     public float moveSpeed;
 
+    private GameObject enemyTrigger;
+
     //couldnt get access to scene gameObject for some reason so im gonna roll the dice and stick to the first patch that worked for me and continue the tutorial!!!
 
     private void Update()
@@ -19,5 +21,14 @@ public class Bullet : MonoBehaviour
 
         this.transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed);
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Enemy")
+        {
+            enemyTrigger.GetComponent<HunchBotEnemy>().health -= damage;
+            Destroy(this.gameObject);  // so the bullet doesnt keep transforming;
+        }
     }
 }
