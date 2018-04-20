@@ -152,6 +152,41 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
+        type: 2}
+      propertyPath: m_Height
+      value: 2.9249697
+      objectReference: {fileID: 0}
+    - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 0.39644086
+      objectReference: {fileID: 0}
+    - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
+        type: 2}
+      propertyPath: m_Direction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.9336418
+      objectReference: {fileID: 0}
+    - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.16368878
+      objectReference: {fileID: 0}
+    - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 2.6934447
+      objectReference: {fileID: 0}
+    - target: {fileID: 54731636658069920, guid: cc7f390e1da5d714b99a48965e0ce24f,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc7f390e1da5d714b99a48965e0ce24f, type: 2}
   m_IsPrefabParent: 0
