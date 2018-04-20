@@ -253,9 +253,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\Scripts\BlockAController.cs" />
     <Compile Include="Assets\Scripts\BlockBAutoLook.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\CamMouseMove.cs" />
     <Compile Include="Assets\Scripts\CharacterControls.cs" />
     <Compile Include="Assets\Scripts\DontWork\PlayerLook.cs" />
@@ -264,9 +264,9 @@
     <Compile Include="Assets\Scripts\HunchController.cs" />
     <Compile Include="Assets\Scripts\LerpRotation.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
+    <Compile Include="Assets\Scripts\Shooting.cs" />
     <Compile Include="Assets\Scripts\SphereControllerRigidBody.cs" />
     <Compile Include="Assets\Scripts\SphereControllerTransform.cs" />
-    <Compile Include="Assets\Shooting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
