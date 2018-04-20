@@ -253,6 +253,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\HunchBotEnemy.cs" />
     <Compile Include="Assets\Scripts\BlockAController.cs" />
     <Compile Include="Assets\Scripts\BlockBAutoLook.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
