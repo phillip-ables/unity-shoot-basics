@@ -122,7 +122,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4489358027648012, guid: cc7f390e1da5d714b99a48965e0ce24f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.3586039
       objectReference: {fileID: 0}
     - target: {fileID: 4489358027648012, guid: cc7f390e1da5d714b99a48965e0ce24f, type: 2}
       propertyPath: m_LocalPosition.y
@@ -130,23 +130,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4489358027648012, guid: cc7f390e1da5d714b99a48965e0ce24f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 5.83
+      value: 6.7448072
       objectReference: {fileID: 0}
     - target: {fileID: 4489358027648012, guid: cc7f390e1da5d714b99a48965e0ce24f, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4489358027648012, guid: cc7f390e1da5d714b99a48965e0ce24f, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.75120306
       objectReference: {fileID: 0}
     - target: {fileID: 4489358027648012, guid: cc7f390e1da5d714b99a48965e0ce24f, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4489358027648012, guid: cc7f390e1da5d714b99a48965e0ce24f, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.6600712
       objectReference: {fileID: 0}
     - target: {fileID: 4489358027648012, guid: cc7f390e1da5d714b99a48965e0ce24f, type: 2}
       propertyPath: m_RootOrder
@@ -187,6 +187,15 @@ Prefab:
         type: 2}
       propertyPath: m_Direction
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114262992199714140, guid: cc7f390e1da5d714b99a48965e0ce24f,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1261813077}
+    - target: {fileID: 4489358027648012, guid: cc7f390e1da5d714b99a48965e0ce24f, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 97.38901
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc7f390e1da5d714b99a48965e0ce24f, type: 2}
@@ -962,6 +971,10 @@ MonoBehaviour:
   bullet: {fileID: 1908951672323320, guid: b224b359bcaa96a408fb39322d3bc63a, type: 2}
   bulletSpawn: {fileID: 1182206605}
   fireRate: 2
+--- !u!4 &1261813077 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+  m_PrefabInternal: {fileID: 1258183700}
 --- !u!4 &1291160624 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4658927753189536, guid: 58f11458308db5342bc7ccdc3c952adb,
