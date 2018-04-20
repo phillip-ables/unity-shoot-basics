@@ -14,6 +14,13 @@ public class HunchBotEnemy : MonoBehaviour
         Quaternion lookRotation = Quaternion.LookRotation(relativePos);
         transform.rotation = lookRotation;
 
+
+        if (health <= 0)
+            Die();
     }
 
+    public void Die()
+    {
+        Destroy(this.gameObject);
+    }
 }
