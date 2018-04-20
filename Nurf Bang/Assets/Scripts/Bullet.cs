@@ -27,8 +27,10 @@ public class Bullet : MonoBehaviour
     {
         if(other.tag == "Enemy")
         {
+            enemyTrigger = other.gameObject;
             enemyTrigger.GetComponent<HunchBotEnemy>().health -= damage;
             Destroy(this.gameObject);  // so the bullet doesnt keep transforming;
+            Debug.Log("Boom Boom Enemy!!");
         }
     }
 }

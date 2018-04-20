@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 4489358027648012}
   - component: {fileID: 136320129429909666}
   - component: {fileID: 54731636658069920}
+  - component: {fileID: 114262992199714140}
   m_Layer: 0
   m_Name: HunchBotEnemy
   m_TagString: Enemy
@@ -977,8 +978,20 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &114262992199714140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1412316686657440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fbb6e9da504bb14b8c2c978a2ff8198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!114 &114804107541850012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -998,10 +1011,10 @@ CapsuleCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1412316686657440}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9f93f63d068b08c459038c40fce897d8, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.4125094
-  m_Height: 3.5171504
-  m_Direction: 0
-  m_Center: {x: 0.72675705, y: 2.7434201, z: 0}
+  m_Radius: 0.9336418
+  m_Height: 2.9249697
+  m_Direction: 1
+  m_Center: {x: 0.39644086, y: 2.6934447, z: 0.16368878}

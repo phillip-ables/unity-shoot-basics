@@ -6,9 +6,5 @@ public class HunchBotEnemy : MonoBehaviour
 {
 
     public float health;
-
-    private void Update()
-    {
-        
-    }
+    
 }

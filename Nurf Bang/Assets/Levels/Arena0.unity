@@ -154,37 +154,38 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
         type: 2}
-      propertyPath: m_Height
-      value: 2.9249697
-      objectReference: {fileID: 0}
-    - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
-        type: 2}
-      propertyPath: m_Center.x
-      value: 0.39644086
-      objectReference: {fileID: 0}
-    - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
-        type: 2}
-      propertyPath: m_Direction
-      value: 1
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
         type: 2}
       propertyPath: m_Radius
-      value: 0.9336418
+      value: 1.484289
       objectReference: {fileID: 0}
     - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
         type: 2}
       propertyPath: m_Center.z
-      value: 0.16368878
+      value: 0.18393421
       objectReference: {fileID: 0}
     - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
         type: 2}
-      propertyPath: m_Center.y
-      value: 2.6934447
+      propertyPath: m_Height
+      value: 2.9685783
       objectReference: {fileID: 0}
-    - target: {fileID: 54731636658069920, guid: cc7f390e1da5d714b99a48965e0ce24f,
+    - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
         type: 2}
-      propertyPath: m_Constraints
+      propertyPath: m_Center.x
+      value: 0.339687
+      objectReference: {fileID: 0}
+    - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 9f93f63d068b08c459038c40fce897d8,
+        type: 2}
+    - target: {fileID: 136320129429909666, guid: cc7f390e1da5d714b99a48965e0ce24f,
+        type: 2}
+      propertyPath: m_Direction
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -448,22 +449,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2707adb0e3488d144b7d296004d1461a, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &631353270 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1412316686657440, guid: cc7f390e1da5d714b99a48965e0ce24f,
-    type: 2}
-  m_PrefabInternal: {fileID: 9257601}
---- !u!114 &631353271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 631353270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fbb6e9da504bb14b8c2c978a2ff8198, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &674959899
 Prefab:
   m_ObjectHideFlags: 0
@@ -976,7 +961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 1908951672323320, guid: b224b359bcaa96a408fb39322d3bc63a, type: 2}
   bulletSpawn: {fileID: 1182206605}
-  fireRate: 0
+  fireRate: 2
 --- !u!4 &1291160624 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4658927753189536, guid: 58f11458308db5342bc7ccdc3c952adb,
