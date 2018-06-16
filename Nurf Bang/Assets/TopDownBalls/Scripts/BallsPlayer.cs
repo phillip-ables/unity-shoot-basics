@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BallsPlayer : MonoBehaviour {
+    //Variables
+    public float movementSpeed;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    //Methods
+    private void Update()
+    {
+        PlayerLook playerPlane 
+    }
+
 }

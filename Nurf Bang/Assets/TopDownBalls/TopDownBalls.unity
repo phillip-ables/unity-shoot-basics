@@ -414,6 +414,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c9f068f0abedc4eade39e5c8b499cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1048916599}
+  smooth: 0.3
+  cameraZ: 8.03
+  height: 6.99
 --- !u!1 &1651857615
 GameObject:
   m_ObjectHideFlags: 0
