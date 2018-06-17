@@ -10,6 +10,7 @@ public class BallsPlayer : MonoBehaviour {
 
     public GameObject bulletSpawnPoint;
     public GameObject playerObject;
+    public GameObject bullet;
 
     //Methods
     private void Update()

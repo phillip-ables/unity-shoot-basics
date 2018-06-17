@@ -580,6 +580,7 @@ MonoBehaviour:
   waitTime: 1
   bulletSpawnPoint: {fileID: 824462346}
   playerObject: {fileID: 1651857615}
+  bullet: {fileID: 1756810629971394, guid: 709517bce8f74164fa2aabd6aa124aeb, type: 2}
 --- !u!54 &1048916597
 Rigidbody:
   m_ObjectHideFlags: 0
