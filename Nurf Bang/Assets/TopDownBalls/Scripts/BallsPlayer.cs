@@ -10,10 +10,10 @@ public class BallsPlayer : MonoBehaviour {
     //Methods
     private void Update()
     {
-        //camera position
-        Plane playerPlane = new Plane(Vector3.up, transform.position);
-        //mouse location
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        //PLAYER FACING MOUSE!!//
+        Plane playerPlane = new Plane(Vector3.up, transform.position);  // cameraPosition
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);  // mouseLocation
         float hitDist = 0.0f;
 
         if(playerPlane.Raycast(ray, out hitDist))
@@ -22,9 +22,25 @@ public class BallsPlayer : MonoBehaviour {
             Quaternion targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
             targetRotation.x = 0;
             targetRotation.z = 0;
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotSpeed * Time.deltatime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotSpeed * Time.deltaTime);
         }
 
+        //PLAYER MOVEMENT!!//
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime);
+        }
+
+        //SHOOTING!!//
+        if (Input.GetMouseButtonDown(0))
+        {
+            Shoot();
+        }
+    }
+
+    void Shoot()
+    {
+        Debug.Log("BANG!!");
     }
 
 }
