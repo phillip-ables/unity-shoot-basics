@@ -6,8 +6,10 @@ public class BallsPlayer : MonoBehaviour {
     //Variables
     public float movementSpeed;
     public int rotSpeed = 7;
-    public GameObject bulletSpawnPoint;
     public float waitTime = 0.5f;
+
+    public GameObject bulletSpawnPoint;
+    public GameObject playerObject;
 
     //Methods
     private void Update()
@@ -24,7 +26,7 @@ public class BallsPlayer : MonoBehaviour {
             Quaternion targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
             targetRotation.x = 0;
             targetRotation.z = 0;
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotSpeed * Time.deltaTime);
+            playerObject.transform.rotation = Quaternion.Slerp(playerObject.transform.rotation, targetRotation, rotSpeed * Time.deltaTime);
         }
 
         //PLAYER MOVEMENT!!//
