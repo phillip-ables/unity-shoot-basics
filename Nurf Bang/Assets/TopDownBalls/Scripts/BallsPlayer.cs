@@ -57,7 +57,7 @@ public class BallsPlayer : MonoBehaviour {
 
     void Shoot()
     {
-        Debug.Log("BANG!!");
+        Instantiate(bullet.transform, bulletSpawnPoint.transform.position, Quaternion.identity);
     }
 
 }
