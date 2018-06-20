@@ -9,6 +9,8 @@ public class BallsEnemy : MonoBehaviour {
     public float waitTime;
     public GameObject bullet;
 
+    private GameObject bulletSpawnPoint;
+    private Transform bulletSpawned;
     private GameObject player;
     private float currentTime = 0;
     private bool shot;
@@ -17,6 +19,7 @@ public class BallsEnemy : MonoBehaviour {
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        bulletSpawnPoint = GameObject.Find("PistolHolder/BulletSpawnPoint");
     }
 
     public void Update()
@@ -54,6 +57,7 @@ public class BallsEnemy : MonoBehaviour {
     {
         shot = true;
 
-
+        bulletSpawned = Instantiate(bullet.transform, bulletSpawnPoint.transform.position, Quaternion.identity);
+        bulletSpawned.rotation = this.transform.rotation;
     }
 }
