@@ -7,6 +7,7 @@ public class BallsEnemy : MonoBehaviour {
     public float health;
     public float pointsToGive;
     public float waitTime;
+    public GameObject bullet;
 
     private GameObject player;
     private float currentTime = 0;
@@ -51,6 +52,8 @@ public class BallsEnemy : MonoBehaviour {
 
     public void Shoot()
     {
+        shot = true;
+
 
     }
 }
