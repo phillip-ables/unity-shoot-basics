@@ -6,6 +6,9 @@ public class BallsBullet : MonoBehaviour {
     //Variables
     public float bulletSpeed = 7.0f;
     public float maxDistance;
+    public float damage;
+
+    private GameObject triggeringEnemy;
 
     //Method
     private void Update()
@@ -16,6 +19,15 @@ public class BallsBullet : MonoBehaviour {
         if(maxDistance >= 5)
         {
             Destroy(this.gameObject);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Enemy")
+        {
+            triggeringEnemy = other.gameObject;
+            triggeringEnemy.GetComponent<BallsEnemy>().health -= damage;
         }
     }
 }
