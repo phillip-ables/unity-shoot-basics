@@ -247,9 +247,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BallsDestroyGameObject.cs" />
-    <Compile Include="Assets\BallsEnemyMove.cs" />
-    <Compile Include="Assets\HunchBotEnemy.cs" />
+    <Compile Include="Assets\Jumper\HunchBotEnemy.cs" />
     <Compile Include="Assets\Jumper\Scripts\BlockAController.cs" />
     <Compile Include="Assets\Jumper\Scripts\BlockBAutoLook.cs" />
     <Compile Include="Assets\Jumper\Scripts\Bullet.cs" />
@@ -310,7 +308,9 @@
     <Compile Include="Assets\Jumper\Standard Assets\Utility\WaypointProgressTracker.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsBullet.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsCamera.cs" />
+    <Compile Include="Assets\TopDownBalls\Scripts\BallsDestroyGameObject.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsEnemy.cs" />
+    <Compile Include="Assets\TopDownBalls\Scripts\BallsEnemyMove.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsPlayer.cs" />
   </ItemGroup>
   <ItemGroup>

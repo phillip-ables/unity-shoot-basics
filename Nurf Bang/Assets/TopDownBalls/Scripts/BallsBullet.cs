@@ -7,6 +7,7 @@ public class BallsBullet : MonoBehaviour {
     public float bulletSpeed = 7.0f;
     public float maxDistance;
     public float damage;
+    public GameObject blood;
 
     private GameObject triggeringEnemy;
     private GameObject player;
@@ -32,6 +33,7 @@ public class BallsBullet : MonoBehaviour {
     {
         if(other.tag == "Enemy")
         {
+            Instantiate(blood, transform.position, Quaternion.identity);
             triggeringEnemy = other.gameObject;
             triggeringEnemy.GetComponent<BallsEnemy>().health -= damage;
             Destroy(this.gameObject);
@@ -39,6 +41,7 @@ public class BallsBullet : MonoBehaviour {
 
         if(other.tag == "Player")
         {
+            Instantiate(blood, transform.position, Quaternion.identity);
             player.GetComponent<BallsPlayer>().health -= damage;
             Destroy(this.gameObject);
         }

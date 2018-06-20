@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TopDownBalls/TopDownBalls.unity
+- path: Assets/FPS_BOX/fbsBox.unity
   isLoaded: 1
   isActive: 1
