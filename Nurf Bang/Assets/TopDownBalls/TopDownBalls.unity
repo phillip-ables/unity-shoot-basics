@@ -529,13 +529,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 824462346}
-  m_LocalRotation: {x: -0, y: -0, z: 0.76040596, w: 0.6494481}
+  m_LocalRotation: {x: 0.4989179, y: 0.55064166, z: 0.4928584, w: 0.4527309}
   m_LocalPosition: {x: -0.05769992, y: -0.00910002, z: 0}
   m_LocalScale: {x: 0.045261227, y: 0.035819486, z: 0.036032625}
   m_Children: []
   m_Father: {fileID: 579040544}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 99}
+  m_LocalEulerAnglesHint: {x: -5.223, y: 96.009, z: 89.060005}
 --- !u!23 &824462348
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -623,6 +623,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 824462346}
   playerObject: {fileID: 1651857615}
   bullet: {fileID: 1068974606524028, guid: 709517bce8f74164fa2aabd6aa124aeb, type: 2}
+  bulletSpawn: {fileID: 0}
 --- !u!54 &1048916597
 Rigidbody:
   m_ObjectHideFlags: 0

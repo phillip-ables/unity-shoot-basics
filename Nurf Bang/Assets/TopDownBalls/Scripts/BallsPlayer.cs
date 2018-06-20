@@ -11,6 +11,7 @@ public class BallsPlayer : MonoBehaviour {
     public GameObject bulletSpawnPoint;
     public GameObject playerObject;
     public GameObject bullet;
+    public Transform bulletSpawn;
 
     //Methods
     private void Update()
@@ -57,7 +58,8 @@ public class BallsPlayer : MonoBehaviour {
 
     void Shoot()
     {
-        Instantiate(bullet.transform, bulletSpawnPoint.transform.position, Quaternion.identity);
+        bulletSpawn = Instantiate(bullet.transform, bulletSpawnPoint.transform.position, Quaternion.identity);
+        bulletSpawn.rotation = bulletSpawnPoint.transform.rotation;
     }
 
 }

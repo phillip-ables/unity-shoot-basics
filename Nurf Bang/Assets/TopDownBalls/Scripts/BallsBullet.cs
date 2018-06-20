@@ -16,7 +16,7 @@ public class BallsBullet : MonoBehaviour {
         transform.Translate(Vector3.forward * bulletSpeed * Time.deltaTime);
         maxDistance += 1 * Time.deltaTime;
 
-        if(maxDistance >= 5)
+        if(maxDistance >= 2)
         {
             Destroy(this.gameObject);
         }
@@ -28,6 +28,7 @@ public class BallsBullet : MonoBehaviour {
         {
             triggeringEnemy = other.gameObject;
             triggeringEnemy.GetComponent<BallsEnemy>().health -= damage;
+            Destroy(this.gameObject);
         }
     }
 }
