@@ -362,6 +362,11 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 1.604
       objectReference: {fileID: 0}
+    - target: {fileID: 54053398808768294, guid: 1247e5a7d0a939a47aa0355e1941a502,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1247e5a7d0a939a47aa0355e1941a502, type: 2}
   m_IsPrefabParent: 0
@@ -381,6 +386,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fa03182b7e6dc04c81bb2fee46a1fe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemySpeed: 2
+  retreatDistance: 5
+  stoppingDistance: 0
 --- !u!1 &500971740
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,14 +5,17 @@ using UnityEngine;
 public class BallsEnemyMove : MonoBehaviour {
     //Variables
     public float enemySpeed;
+    public float retreatDistance = 3f;
+
+
     public float stoppingDistance;
-    public float retreatDistance;
-    public Transform player;
+    private Transform player;
 
     //Methods
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        stoppingDistance = Random.value * 10;
     }
 
     private void Update()
@@ -21,9 +24,14 @@ public class BallsEnemyMove : MonoBehaviour {
         {
             transform.position = Vector3.MoveTowards(transform.position, player.position, enemySpeed * Time.deltaTime);
         }
-        else if(Vector3.Distance(player.position, gameObject.transform.position) < retreatDistance)
+        else if(Vector3.Distance(player.position, gameObject.transform.position) < stoppingDistance 
+                    && Vector3.Distance(player.position, gameObject.transform.position) > retreatDistance)
         {
             transform.position = this.transform.position;
+        }
+        else if(Vector3.Distance(player.position, gameObject.transform.position) <= retreatDistance)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, player.position, -enemySpeed * Time.deltaTime);
         }
     }
 }
