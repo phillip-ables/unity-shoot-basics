@@ -21,6 +21,8 @@ public class BallsEnemy : MonoBehaviour {
         {
             Die();
         }
+
+        this.transform.LookAt(player.transform);
     }
 
     public void Die()
