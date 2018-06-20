@@ -8,6 +8,8 @@ public class BallsPlayer : MonoBehaviour {
     public int rotSpeed = 7;
     public float waitTime = 0.5f;
     public float points;
+    public float maxHealth;
+    public float health;
 
     public GameObject bulletSpawnPoint;
     public GameObject playerObject;
@@ -15,6 +17,11 @@ public class BallsPlayer : MonoBehaviour {
     public Transform bulletSpawn;
 
     //Methods
+    private void Start()
+    {
+        health = maxHealth;
+    }
+
     private void Update()
     {
 
@@ -55,6 +62,12 @@ public class BallsPlayer : MonoBehaviour {
         {
             Shoot();
         }
+
+        //PLAYER DEATH!!//
+        if(health <= 0)
+        {
+            Die();
+        }
     }
 
     void Shoot()
@@ -63,4 +76,9 @@ public class BallsPlayer : MonoBehaviour {
         bulletSpawn.rotation = bulletSpawnPoint.transform.rotation;
     }
 
+    public void Die()
+    {
+        print("You Died!");
+        Destroy(gameObject);
+    }
 }

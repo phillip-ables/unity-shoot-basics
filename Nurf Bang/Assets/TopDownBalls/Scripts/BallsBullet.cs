@@ -9,8 +9,14 @@ public class BallsBullet : MonoBehaviour {
     public float damage;
 
     private GameObject triggeringEnemy;
+    private GameObject player;
 
     //Method
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
     private void Update()
     {
         transform.Translate(Vector3.forward * bulletSpeed * Time.deltaTime);
@@ -28,6 +34,12 @@ public class BallsBullet : MonoBehaviour {
         {
             triggeringEnemy = other.gameObject;
             triggeringEnemy.GetComponent<BallsEnemy>().health -= damage;
+            Destroy(this.gameObject);
+        }
+
+        if(other.tag == "Player")
+        {
+            player.GetComponent<BallsPlayer>().health -= damage;
             Destroy(this.gameObject);
         }
     }
