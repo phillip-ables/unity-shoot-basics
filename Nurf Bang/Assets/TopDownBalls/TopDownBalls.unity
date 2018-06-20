@@ -238,6 +238,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114267007440716608, guid: 1247e5a7d0a939a47aa0355e1941a502,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1048916595}
+    - target: {fileID: 114267007440716608, guid: 1247e5a7d0a939a47aa0355e1941a502,
+        type: 2}
+      propertyPath: pointsToGive
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1247e5a7d0a939a47aa0355e1941a502, type: 2}
   m_IsPrefabParent: 0
@@ -601,7 +611,7 @@ GameObject:
   - component: {fileID: 1048916597}
   m_Layer: 0
   m_Name: PlayerHolder
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -620,6 +630,7 @@ MonoBehaviour:
   movementSpeed: 5
   rotSpeed: 7
   waitTime: 1
+  points: 0
   bulletSpawnPoint: {fileID: 824462346}
   playerObject: {fileID: 1651857615}
   bullet: {fileID: 1068974606524028, guid: 709517bce8f74164fa2aabd6aa124aeb, type: 2}

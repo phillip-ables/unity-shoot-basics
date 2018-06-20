@@ -7,6 +7,7 @@ public class BallsPlayer : MonoBehaviour {
     public float movementSpeed;
     public int rotSpeed = 7;
     public float waitTime = 0.5f;
+    public float points;
 
     public GameObject bulletSpawnPoint;
     public GameObject playerObject;
