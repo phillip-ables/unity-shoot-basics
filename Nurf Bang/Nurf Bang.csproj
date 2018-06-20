@@ -308,6 +308,7 @@
     <Compile Include="Assets\Jumper\Standard Assets\Utility\WaypointProgressTracker.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsBullet.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsCamera.cs" />
+    <Compile Include="Assets\TopDownBalls\Scripts\BallsEnemy.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
