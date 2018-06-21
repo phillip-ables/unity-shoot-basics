@@ -11,4 +11,18 @@ public class fpsPlayerMove : MonoBehaviour {
     public bool isAiming;
 
 
+    private void Update()
+    {
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            Camera.main.transform.position += Vector3.right * moveSpeed;
+            Debug.Log("Right");
+        }
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            Camera.main.transform.position += Vector3.left * moveSpeed;
+            Debug.Log("Left");
+        }
+    }
+
 }

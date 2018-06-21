@@ -305,9 +305,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  turnSpeed: 0
-  moveSpeed: 0
-  jumpStrength: 0
+  turnSpeed: 5
+  moveSpeed: 3
+  jumpStrength: 5
   isRunning: 0
   isAiming: 0
 --- !u!1 &687004637
