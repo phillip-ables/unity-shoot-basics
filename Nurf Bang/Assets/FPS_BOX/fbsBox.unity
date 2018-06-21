@@ -757,6 +757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8d7e1e8ee4eae4c99ec34b33168c70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponRange: 50
 --- !u!1 &811775002
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,6 +853,7 @@ GameObject:
   - component: {fileID: 880124339}
   - component: {fileID: 880124338}
   - component: {fileID: 880124337}
+  - component: {fileID: 880124341}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -925,6 +927,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &880124341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 880124336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99de8083f852be74c9e79309fb826f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1225708649
 GameObject:
   m_ObjectHideFlags: 0
