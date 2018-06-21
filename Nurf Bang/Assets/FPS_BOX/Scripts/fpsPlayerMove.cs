@@ -9,6 +9,7 @@ public class fpsPlayerMove : MonoBehaviour {
     public float jumpStrength;
     public bool isRunning;
     public bool isAiming;
+    public bool isGrounded;
 
 
     private void Update()
@@ -31,7 +32,25 @@ public class fpsPlayerMove : MonoBehaviour {
             Camera.main.transform.position += Vector3.back * moveSpeed * Time.deltaTime;
         }
 
+        if(Input.GetKey(KeyCode.Space) && isGrounded)
+        {
+            Jump();
+        }
+
+        if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            Run();
+        }
 
     }
 
+    private void Jump()
+    {
+        Camera.main.transform.position += Vector3.up * jumpStrength * Time.deltaTime;
+    }
+
+    private void Run()
+    {
+
+    }
 }
