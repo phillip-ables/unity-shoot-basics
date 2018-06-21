@@ -29,6 +29,16 @@ public class fpsRaycastShoot : MonoBehaviour {
             && Time.deltaTime > nextFire)
         {
             nextFire = Time.deltaTime + fireRate;
+            StartCoroutine(ShotEffect());
         }
+    }
+
+    private IEnumerator ShotEffect()
+    {
+        shotSound.Play();
+
+        laserLine.enabled = true;
+        yield return shotDuration;
+        laserLine.enabled = false;
     }
 }
