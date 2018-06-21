@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class fpsRayViewer : MonoBehaviour {
+    //Variables
+    public float weaponRange = 50f;
 
-	// Use this for initialization
+    private Camera fpsCam;
+
+    //Mehtods
 	void Start () {
-		
+        fpsCam = GetComponentInParent<Camera>();
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}
