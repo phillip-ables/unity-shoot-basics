@@ -34,6 +34,15 @@ public class fpsRaycastShoot : MonoBehaviour {
             Vector3 rayOrgin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
             RaycastHit hit;
             laserLine.SetPosition(0, gunEnd.position);
+
+            if(Physics.Raycast(rayOrgin, fpsCam.transform.forward, out hit, weaponRange))
+            {
+                laserLine.SetPosition(1, hit.point);
+            }
+            else
+            {
+                laserLine.SetPosition(1, rayOrgin + (fpsCam.transform.forward * weaponRange));
+            }
         }
     }
 
