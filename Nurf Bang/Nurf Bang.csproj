@@ -248,6 +248,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FPS_BOX\Scripts\fpsPlayerMove.cs" />
+    <Compile Include="Assets\FPS_BOX\Scripts\fpsRaycastShoot.cs" />
     <Compile Include="Assets\Jumper\HunchBotEnemy.cs" />
     <Compile Include="Assets\Jumper\Scripts\BlockAController.cs" />
     <Compile Include="Assets\Jumper\Scripts\BlockBAutoLook.cs" />
