@@ -32,6 +32,9 @@ public class fpsPlayerMove : MonoBehaviour {
             Camera.main.transform.position += Vector3.back * moveSpeed * Time.deltaTime;
         }
 
+        //PLAYER TURN!!//
+
+
         if(Input.GetKey(KeyCode.Space) && isGrounded)
         {
             Jump();
@@ -40,6 +43,10 @@ public class fpsPlayerMove : MonoBehaviour {
         if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
             Run();
+        }
+        else
+        {
+            moveSpeed = 6.0f;
         }
 
     }
@@ -51,6 +58,6 @@ public class fpsPlayerMove : MonoBehaviour {
 
     private void Run()
     {
-
+        moveSpeed = 12;
     }
 }
