@@ -25,6 +25,10 @@ public class fpsRaycastShoot : MonoBehaviour {
 
     private void Update()
     {
-        
+        if(Input.GetButtonDown("Fire1") 
+            && Time.deltaTime > nextFire)
+        {
+            nextFire = Time.deltaTime + fireRate;
+        }
     }
 }
