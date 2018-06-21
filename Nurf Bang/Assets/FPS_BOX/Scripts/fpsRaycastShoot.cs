@@ -30,6 +30,10 @@ public class fpsRaycastShoot : MonoBehaviour {
         {
             nextFire = Time.deltaTime + fireRate;
             StartCoroutine(ShotEffect());
+
+            Vector3 rayOrgin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
+            RaycastHit hit;
+            laserLine.SetPosition(0, gunEnd.position);
         }
     }
 
