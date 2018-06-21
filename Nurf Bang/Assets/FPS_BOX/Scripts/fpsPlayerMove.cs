@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class fpsPlayerMove : MonoBehaviour {
+    public AudioSource jumpSound;
     public GameObject player;
     public float turnSpeed;
     public float moveSpeed;
@@ -54,6 +55,7 @@ public class fpsPlayerMove : MonoBehaviour {
     private void Jump()
     {
         Camera.main.transform.position += Vector3.up * jumpStrength * Time.deltaTime;
+        jumpSound.Play();
     }
 
     private void Run()
