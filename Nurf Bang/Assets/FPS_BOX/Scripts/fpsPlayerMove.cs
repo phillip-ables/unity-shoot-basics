@@ -13,16 +13,25 @@ public class fpsPlayerMove : MonoBehaviour {
 
     private void Update()
     {
+        //PLAYER MOVEMENT!!//
         if (Input.GetAxis("Horizontal") > 0)
         {
-            Camera.main.transform.position += Vector3.right * moveSpeed;
-            Debug.Log("Right");
+            Camera.main.transform.position += Vector3.right * moveSpeed * Time.deltaTime;
         }
         if (Input.GetAxis("Horizontal") < 0)
         {
-            Camera.main.transform.position += Vector3.left * moveSpeed;
-            Debug.Log("Left");
+            Camera.main.transform.position += Vector3.left * moveSpeed * Time.deltaTime;
         }
+        if (Input.GetAxis("Vertical") > 0)
+        {
+            Camera.main.transform.position += Vector3.forward * moveSpeed * Time.deltaTime;
+        }
+        if(Input.GetAxis("Vertical") < 0)
+        {
+            Camera.main.transform.position += Vector3.back * moveSpeed * Time.deltaTime;
+        }
+
+
     }
 
 }
