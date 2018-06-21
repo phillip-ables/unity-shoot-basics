@@ -38,6 +38,18 @@ public class fpsRaycastShoot : MonoBehaviour {
             if(Physics.Raycast(rayOrgin, fpsCam.transform.forward, out hit, weaponRange))
             {
                 laserLine.SetPosition(1, hit.point);
+
+                fpsDestroyableObject health = hit.collider.GetComponent<fpsDestroyableObject>();
+
+                if(health != null)
+                {
+                    health.Damage(gunDamage);
+                }
+
+                if(hit.rigidbody != null)
+                {
+                    hit.rigidbody.AddForce(-hit.normal * hitForce);
+                }
             }
             else
             {
