@@ -14,7 +14,7 @@ public class fpsRayViewer : MonoBehaviour {
 	}
 	
 	void Update () {
-        Vector3 lineOrgin = fpsCam.ViewportToScreenPoint(new Vector3(0.5f, 0.5f, 0));
+        Vector3 lineOrgin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
         Debug.DrawRay(lineOrgin, fpsCam.transform.forward * weaponRange, Color.green);
     }
 }

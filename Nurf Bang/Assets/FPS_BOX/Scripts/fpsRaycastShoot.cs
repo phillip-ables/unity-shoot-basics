@@ -26,9 +26,9 @@ public class fpsRaycastShoot : MonoBehaviour {
     private void Update()
     {
         if(Input.GetButtonDown("Fire1") 
-            && Time.deltaTime > nextFire)
+            && Time.time > nextFire)
         {
-            nextFire = Time.deltaTime + fireRate;
+            nextFire = Time.time + fireRate;
             StartCoroutine(ShotEffect());
 
             Vector3 rayOrgin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
