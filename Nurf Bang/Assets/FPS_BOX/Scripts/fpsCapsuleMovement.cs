@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class fpsCapsuleMovement : MonoBehaviour {
+    public float walkAcceleration = 5.0f;
+    public GameObject cameraObject;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private void Update()
+    {
+        transform.rotation = Quaternion.Euler(0, cameraObject.GetComponent<fpsLook>().currentYRotation, 0);
+    }
 }

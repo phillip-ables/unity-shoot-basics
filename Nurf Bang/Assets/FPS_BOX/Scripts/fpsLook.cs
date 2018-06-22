@@ -6,10 +6,10 @@ public class fpsLook : MonoBehaviour {
     //Variables
     public float lookSensitivity = 5.0f;
     public float lookSmoothDamp = 0.1f;
+    public float currentYRotation;
 
     private float yRotation;
     private float xRotation;
-    private float currentYRotation;
     private float currentXRotation;
     private float yRotationVelocity;
     private float xRotationVelocity;
