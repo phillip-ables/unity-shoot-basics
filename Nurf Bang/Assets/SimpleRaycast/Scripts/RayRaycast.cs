@@ -16,7 +16,7 @@ public class RayRaycast : MonoBehaviour {
 
             if (Physics.Raycast(rayOrigin, out hitInfo, rayRange))
             {
-                Debug.Log("You are casting a ray");
+                Debug.DrawLine(rayOrigin.direction, hitInfo.point);
             }
         }
     }
