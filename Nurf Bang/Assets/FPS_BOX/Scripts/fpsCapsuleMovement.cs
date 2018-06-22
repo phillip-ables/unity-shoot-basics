@@ -9,6 +9,7 @@ public class fpsCapsuleMovement : MonoBehaviour {
 
     private Rigidbody rb;
     private Vector2 horizontalMovement;
+    private Vector3 velocity;
 
     private void Start()
     {
@@ -23,6 +24,8 @@ public class fpsCapsuleMovement : MonoBehaviour {
             horizontalMovement.Normalize();
             horizontalMovement *= maxWalkSpeed;
         }
+        velocity = new Vector3(horizontalMovement.x, 0, horizontalMovement.y);
+        rb.velocity = velocity;
 
         transform.rotation = Quaternion.Euler(0, cameraObject.GetComponent<fpsLook>().currentYRotation, 0);
         rb.AddRelativeForce(Input.GetAxis("Horizontal") * walkAcceleration, 0, Input.GetAxis("Vertical") * walkAcceleration);
