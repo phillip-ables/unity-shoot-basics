@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RayRaycast : MonoBehaviour {
-    public float rayRange = 25;
+    public float rayRange = 25.0f;
+    public float hitPower = 500.0f;
 
     private void Update()
     {
@@ -17,6 +18,11 @@ public class RayRaycast : MonoBehaviour {
             if (Physics.Raycast(rayOrigin, out hitInfo, rayRange))
             {
                 Debug.DrawLine(rayOrigin.direction, hitInfo.point);
+
+                if (hitInfo.rigidbody != null)
+                {
+                    hitInfo.rigidbody.AddForceAtPosition(rayOrigin.direction, hitInfo.point);
+                }
             }
         }
     }
