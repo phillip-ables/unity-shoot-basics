@@ -36,6 +36,7 @@ public class RayRaycast : MonoBehaviour {
                     //material
                     //color
                     // = new color.
+                    hitInfo.transform.gameObject.GetComponent<Renderer>().material.color = Color.red;
                 }
             }
         }
