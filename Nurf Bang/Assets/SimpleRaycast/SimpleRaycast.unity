@@ -338,6 +338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf4bda0bf6ed61f4f95a17e8989f7c9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rayRange: 25
+  hitPower: 5000
 --- !u!1001 &1337178065
 Prefab:
   m_ObjectHideFlags: 0

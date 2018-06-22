@@ -21,7 +21,21 @@ public class RayRaycast : MonoBehaviour {
 
                 if (hitInfo.rigidbody != null)
                 {
-                    hitInfo.rigidbody.AddForceAtPosition(rayOrigin.direction, hitInfo.point);
+                    //call the hit information
+                    //call the rigid body
+                    // call the addforceposition menu
+                    //call the direction fo the hit information
+                    //call the position of where the force should be
+                    //add with the direction, your force variable
+                    hitInfo.rigidbody.AddForceAtPosition(rayOrigin.direction * hitPower, hitInfo.point);
+
+                    //call the hit information.
+                    //call the transform
+                    //gameobject
+                    //renderer
+                    //material
+                    //color
+                    // = new color.
                 }
             }
         }
