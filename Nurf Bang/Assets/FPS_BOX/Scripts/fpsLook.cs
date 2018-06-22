@@ -20,7 +20,7 @@ public class fpsLook : MonoBehaviour {
         yRotation += Input.GetAxis("Mouse X") * lookSensitivity;
         xRotation -= Input.GetAxis("Mouse Y") * lookSensitivity;
 
-        xRotation = Mathf.Clamp(xRotation, 90, -90);
+        xRotation = Mathf.Clamp(xRotation, -90, 90);
 
         currentXRotation = Mathf.SmoothDamp(currentXRotation, xRotation, ref xRotationVelocity, lookSmoothDamp);
         currentYRotation = Mathf.SmoothDamp(currentYRotation, yRotation, ref yRotationVelocity, lookSmoothDamp);
