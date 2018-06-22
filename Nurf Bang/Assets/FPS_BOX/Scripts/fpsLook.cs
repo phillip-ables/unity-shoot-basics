@@ -14,4 +14,11 @@ public class fpsLook : MonoBehaviour {
     public float lookSmoothDamp = 0.1f;
 
     //Methods
+    private void Update()
+    {
+        yRotation += Input.GetAxis("MouseX") * lookSensitivity;
+        xRotation -= Input.GetAxis("MouseY") * lookSensitivity;
+
+        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+    }
 }
