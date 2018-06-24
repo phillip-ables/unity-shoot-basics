@@ -21,7 +21,15 @@ public class fpsPatrol : MonoBehaviour {
 
         if(Vector3.Distance(transform.position, moveSpots[randomSpot].position) < 0.2f)
         {
-
+            if(waitTime <= 0)
+            {
+                waitTime = startWaitTime;
+                randomSpot = Random.Range(0, moveSpots.Length);
+            }
+            else
+            {
+                waitTime -= Time.deltaTime;
+            }
         }
     }
 }
