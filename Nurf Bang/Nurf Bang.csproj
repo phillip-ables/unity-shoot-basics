@@ -251,6 +251,7 @@
     <Compile Include="Assets\FPS_BOX\Scripts\fpsDestroyableObject.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsGhostSpwan.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsLook.cs" />
+    <Compile Include="Assets\FPS_BOX\Scripts\fpsPatrol.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsPlayerMove.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsRaycastShoot.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsRayViewer.cs" />
