@@ -249,6 +249,7 @@
   <ItemGroup>
     <Compile Include="Assets\FPS_BOX\Scripts\fpsCapsuleMovement.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsDestroyableObject.cs" />
+    <Compile Include="Assets\FPS_BOX\Scripts\fpsGhostSpwan.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsLook.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsPlayerMove.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsRaycastShoot.cs" />
