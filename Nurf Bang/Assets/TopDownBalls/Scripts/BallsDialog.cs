@@ -1,16 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class BallsDialog : MonoBehaviour {
+    //Variables
+    public TextMeshProUGUI textDisplay;
+    public string[] sentences;
+    private int index;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    //Methods
 }
