@@ -57,7 +57,6 @@ public class BallsDialog : MonoBehaviour {
 
     public void NextSentence()
     {
-        breathingAudio.Play();
         textDisplayAnimation.SetTrigger("Change");
         textSize = 0;
         textDisplay.text = "";
@@ -65,12 +64,14 @@ public class BallsDialog : MonoBehaviour {
 
         if (index < sentences.Length - 1)
         {
+            breathingAudio.Play();
             index++;
             StartCoroutine(Type());
         }
         else
         {
             continueButton.text = "";
+            laughingAudio.Stop();
         }
     }
 }
