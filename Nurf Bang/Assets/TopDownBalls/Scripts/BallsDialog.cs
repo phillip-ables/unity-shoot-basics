@@ -6,8 +6,12 @@ using TMPro;
 public class BallsDialog : MonoBehaviour {
     //Variables
     public TextMeshProUGUI textDisplay;
+    public TextMeshProUGUI continueButton;
     public float typingSpeed = 0.02f;
+    public float buttonSpeed = 0.01f;
 
+    private int textSize = 0;
+    private int buttonSize = 400;
     private string[] sentences;
     private int index;
     //Methods
@@ -31,19 +35,30 @@ public class BallsDialog : MonoBehaviour {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        StartCoroutine(Continue());
+    }
+
+    IEnumerator Continue()
+    {
+        for(int i = 0; i < buttonSize; i++)
+        {
+            buttonSize++;
+            continueButton.fontSize = textSize;
+            yield return new WaitForSeconds(buttonSpeed);
+        }
+        continueButton.fontSize = 0;
     }
 
     public void NextSentence()
     {
-        if(index < sentences.Length - 1)
+        textSize = 0;
+        textDisplay.text = "";
+        continueButton.fontSize = textSize;
+
+        if (index < sentences.Length - 1)
         {
             index++;
-            textDisplay.text = "";
             StartCoroutine(Type());
-        }
-        else
-        {
-            textDisplay.text = "";
         }
     }
 }

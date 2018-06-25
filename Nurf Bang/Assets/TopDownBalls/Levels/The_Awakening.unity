@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 5577813}
   - component: {fileID: 5577812}
   m_Layer: 5
-  m_Name: txtContinue
+  m_Name: btnContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
