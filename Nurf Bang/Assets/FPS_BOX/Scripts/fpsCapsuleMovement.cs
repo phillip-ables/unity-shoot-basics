@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class fpsCapsuleMovement : MonoBehaviour {
     public float walkAcceleration = 5.0f;
+    public float walkDeacceleration = 5.0f;
     public GameObject cameraObject;
     public float maxWalkSpeed = 50.0f;
     public float jumpVelocity = 800.0f;
@@ -27,6 +28,15 @@ public class fpsCapsuleMovement : MonoBehaviour {
             horizontalMovement.Normalize();
             horizontalMovement *= maxWalkSpeed;
         }
+
+        if (Input.GetAxis("Horizontal") == 0
+            && Input.GetAxis("Vertical") == 0
+            && grounded)
+        {
+            horizontalMovement.x /= walkDeacceleration;
+            horizontalMovement.y /= walkDeacceleration;
+        }
+
         velocity = new Vector3(horizontalMovement.x, 0, horizontalMovement.y);
         rb.velocity = velocity;
 
