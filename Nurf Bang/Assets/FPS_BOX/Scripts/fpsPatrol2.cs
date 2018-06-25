@@ -5,7 +5,10 @@ using UnityEngine;
 public class fpsPatrol2 : MonoBehaviour {
     public float speed;
     public float startWaitTime;
-    public Transform clouds;
+    public float minX = -48.0f;
+    public float maxX = 442.0f;
+    public float minY =   7.6f;
+    public float maxY = 489.0f;
 
     private Transform moveSpot;
     private float waitTime;
