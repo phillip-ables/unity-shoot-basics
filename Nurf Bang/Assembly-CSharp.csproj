@@ -66,6 +66,7 @@
     <Compile Include="Assets\FPS_BOX\Scripts\fpsGhostSpwan.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsLook.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsPatrol.cs" />
+    <Compile Include="Assets\FPS_BOX\Scripts\fpsPatrol2.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsPlayerMove.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsRaycastShoot.cs" />
     <Compile Include="Assets\FPS_BOX\Scripts\fpsRayViewer.cs" />
@@ -139,11 +140,11 @@
     <None Include="Assets\Jumper\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\Jumper\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Jumper\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/phill/Desktop/code/unity-shoot-basics/Nurf Bang/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/phill/Desktop/code/unity-shoot-basics/Nurf Bang/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/phill/Desktop/code/unity-shoot-basics/Nurf Bang/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

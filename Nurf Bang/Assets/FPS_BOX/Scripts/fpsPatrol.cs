@@ -13,6 +13,7 @@ public class fpsPatrol : MonoBehaviour {
 
     private void Start()
     {
+        waitTime = startWaitTime;
         randomSpot = Random.Range(0, moveSpots.Length);
         for(int i = 0; i < clouds.childCount; i++)
         {

@@ -177,8 +177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
-  startWaitTime: 4
-  clouds: {fileID: 4354498825240398, guid: 6ffe7d8f0105ee74fa710e4a11a168e8, type: 2}
+  startWaitTime: 1
+  clouds: {fileID: 0}
 --- !u!136 &136737355526905664
 CapsuleCollider:
   m_ObjectHideFlags: 1
