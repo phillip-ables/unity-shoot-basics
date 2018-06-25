@@ -7,7 +7,7 @@ public class fpsCapsuleMovement : MonoBehaviour {
     public GameObject cameraObject;
     public float maxWalkSpeed = 50.0f;
     public float jumpVelocity = 800.0f;
-    public float maxSlop = 60;
+    public float maxSlope = 60.0f;
 
     private bool grounded = false;
     private Rigidbody rb;
@@ -36,6 +36,17 @@ public class fpsCapsuleMovement : MonoBehaviour {
         if(Input.GetButtonDown("Jump") && grounded)
         {
             rb.AddForce(0, jumpVelocity, 0);
+        }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        foreach(ContactPoint contact in collision.contacts)
+        {
+            if(Vector3.Angle(contact.normal, Vector3.up) < maxSlope)
+            {
+                grounded = true;
+            }
         }
     }
 }
