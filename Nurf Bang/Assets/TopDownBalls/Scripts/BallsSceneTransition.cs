@@ -25,6 +25,7 @@ public class BallsSceneTransition : MonoBehaviour {
     IEnumerator LoadScene()
     {
         transAnimation.SetTrigger("End");
+        Debug.Log("END");
         yield return new WaitForSeconds(transWait);
         SceneManager.LoadScene(sceneName);
     }
