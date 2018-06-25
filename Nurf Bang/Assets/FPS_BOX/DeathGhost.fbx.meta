@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 406eec210ac7f6e41957ca31c9bbfb85
-timeCreated: 1529798170
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -22,6 +20,7 @@ ModelImporter:
     7400000: Default Take
     9500000: //RootNode
     10800000: Lamp
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -41,6 +40,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

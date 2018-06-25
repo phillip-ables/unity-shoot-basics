@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class fpsPatrol : MonoBehaviour {
     public float speed;
-    public Transform[] moveSpots;
     public float startWaitTime;
+    public Transform clouds;
 
+    private Transform[] moveSpots;
     private float waitTime;
     private int randomSpot;
 
     private void Start()
     {
         randomSpot = Random.Range(0, moveSpots.Length);
+        for(int i = 0; i < clouds.childCount; i++)
+        {
+            moveSpots[i] = clouds.GetChild(i);
+        }
+
     }
 
     private void Update()
