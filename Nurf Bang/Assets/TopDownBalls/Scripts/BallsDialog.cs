@@ -13,8 +13,8 @@ public class BallsDialog : MonoBehaviour {
     public Animator textDisplayAnimation;
     public AudioSource laughingAudio;
     public AudioSource breathingAudio;
-    public Animator camShakeAnim;
 
+    private BallsCameraFX shake;
     private int textSize = 0;
     private int buttonSize = 400;
     private string[] sentences;
@@ -22,6 +22,7 @@ public class BallsDialog : MonoBehaviour {
     //Methods
     private void Start()
     {
+        shake = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<BallsCameraFX>();
         laughingAudio.Play();
         continueButton.fontSize = 0;
         sentences = new string[] {
@@ -59,13 +60,13 @@ public class BallsDialog : MonoBehaviour {
     public void NextSentence()
     {
         textDisplayAnimation.SetTrigger("Change");
-        CamShake();
         textSize = 0;
         textDisplay.text = "";
         continueButton.fontSize = textSize;
 
         if (index < sentences.Length - 1)
         {
+            shake.CamShake();
             breathingAudio.Play();
             index++;
             StartCoroutine(Type());
@@ -75,10 +76,5 @@ public class BallsDialog : MonoBehaviour {
             continueButton.text = "";
             laughingAudio.Stop();
         }
-    }
-
-    public void CamShake()
-    {
-        camShakeAnim.SetTrigger("Shake");
     }
 }
