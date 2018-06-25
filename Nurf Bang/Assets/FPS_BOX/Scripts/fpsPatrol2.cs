@@ -7,31 +7,24 @@ public class fpsPatrol2 : MonoBehaviour {
     public float startWaitTime;
     public Transform clouds;
 
-    private Transform[] moveSpots;
+    private Transform moveSpot;
     private float waitTime;
     private int randomSpot;
 
     private void Start()
     {
         waitTime = startWaitTime;
-        randomSpot = Random.Range(0, moveSpots.Length);
-        for (int i = 0; i < clouds.childCount; i++)
-        {
-            moveSpots[i] = clouds.GetChild(i);
-        }
-
     }
 
     private void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, moveSpots[randomSpot].position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, moveSpot.position, speed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, moveSpots[randomSpot].position) < 0.2f)
+        if (Vector3.Distance(transform.position, moveSpot.position) < 0.2f)
         {
             if (waitTime <= 0)
             {
                 waitTime = startWaitTime;
-                randomSpot = Random.Range(0, moveSpots.Length);
             }
             else
             {
