@@ -12,6 +12,7 @@ public class BallsDialog : MonoBehaviour {
     public int buttonGrowth = 2;
     public Animator textDisplayAnimation;
 
+    private AudioSource auid0Source;
     private int textSize = 0;
     private int buttonSize = 400;
     private string[] sentences;
@@ -19,6 +20,7 @@ public class BallsDialog : MonoBehaviour {
     //Methods
     private void Start()
     {
+        audi0Source = GetComponent<AudioSource>();
         continueButton.fontSize = 0;
         sentences = new string[] {
             "!HoW MaNy FiLtErS dO yOu HiDe BeHiNd My LoVe?",
@@ -63,6 +65,10 @@ public class BallsDialog : MonoBehaviour {
         {
             index++;
             StartCoroutine(Type());
+        }
+        else
+        {
+            continueButton.text = "";
         }
     }
 }
