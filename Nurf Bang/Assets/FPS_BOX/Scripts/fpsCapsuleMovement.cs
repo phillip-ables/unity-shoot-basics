@@ -49,4 +49,9 @@ public class fpsCapsuleMovement : MonoBehaviour {
             }
         }
     }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        grounded = false;
+    }
 }
