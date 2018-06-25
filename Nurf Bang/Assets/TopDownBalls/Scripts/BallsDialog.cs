@@ -9,6 +9,7 @@ public class BallsDialog : MonoBehaviour {
     public TextMeshProUGUI continueButton;
     public float typingSpeed = 0.02f;
     public float buttonSpeed = 0.01f;
+    public int buttonGrowth = 2;
 
     private int textSize = 0;
     private int buttonSize = 400;
@@ -17,6 +18,7 @@ public class BallsDialog : MonoBehaviour {
     //Methods
     private void Start()
     {
+        continueButton.fontSize = 0;
         sentences = new string[] {
             "!HoW MaNy FiLtErS dO yOu HiDe BeHiNd My LoVe?",
             "!HoW MaNy FiLtErS dO yOu HiDe BeHiNd My LoVe?",
@@ -30,7 +32,7 @@ public class BallsDialog : MonoBehaviour {
     
     IEnumerator Type()
     {
-        foreach(char letter in sentences[index].ToCharArray())
+        foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
@@ -40,13 +42,13 @@ public class BallsDialog : MonoBehaviour {
 
     IEnumerator Continue()
     {
-        for(int i = 0; i < buttonSize; i++)
+        for(int i = 0; i < buttonSize / buttonGrowth; i++)
         {
-            buttonSize++;
+            textSize += buttonGrowth;
             continueButton.fontSize = textSize;
             yield return new WaitForSeconds(buttonSpeed);
         }
-        continueButton.fontSize = 0;
+        NextSentence();
     }
 
     public void NextSentence()
