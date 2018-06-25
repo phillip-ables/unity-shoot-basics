@@ -167,6 +167,7 @@
     <Compile Include="Assets\TopDownBalls\Scripts\BallsBullet.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsCamera.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsDestroyGameObject.cs" />
+    <Compile Include="Assets\TopDownBalls\Scripts\BallsDialog.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsEnemy.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsEnemyMove.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsPlayer.cs" />
@@ -402,6 +403,12 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="TextMeshPro-2017.3-Editor">
+      <HintPath>C:/Users/phill/Desktop/code/unity-shoot-basics/Nurf Bang/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="TextMeshPro-2017.3-Runtime">
+      <HintPath>C:/Users/phill/Desktop/code/unity-shoot-basics/Nurf Bang/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/phill/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
@@ -410,12 +417,6 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/phill/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="TextMeshPro-2017.3-Runtime">
-      <HintPath>C:/Users/phill/Desktop/code/unity-shoot-basics/Nurf Bang/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="TextMeshPro-2017.3-Editor">
-      <HintPath>C:/Users/phill/Desktop/code/unity-shoot-basics/Nurf Bang/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
