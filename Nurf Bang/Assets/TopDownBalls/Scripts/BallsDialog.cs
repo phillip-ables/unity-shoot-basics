@@ -10,6 +10,7 @@ public class BallsDialog : MonoBehaviour {
     public float typingSpeed = 0.02f;
     public float buttonSpeed = 0.01f;
     public int buttonGrowth = 2;
+    public Animator textDisplayAnimation;
 
     private int textSize = 0;
     private int buttonSize = 400;
@@ -53,6 +54,7 @@ public class BallsDialog : MonoBehaviour {
 
     public void NextSentence()
     {
+        textDisplayAnimation.SetTrigger("Change");
         textSize = 0;
         textDisplay.text = "";
         continueButton.fontSize = textSize;
