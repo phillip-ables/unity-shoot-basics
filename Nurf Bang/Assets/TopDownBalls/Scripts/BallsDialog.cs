@@ -32,4 +32,18 @@ public class BallsDialog : MonoBehaviour {
             yield return new WaitForSeconds(typingSpeed);
         }
     }
+
+    public void NextSentence()
+    {
+        if(index < sentences.Length - 1)
+        {
+            index++;
+            textDisplay.text = "";
+            StartCoroutine(Type());
+        }
+        else
+        {
+            textDisplay.text = "";
+        }
+    }
 }
