@@ -9,6 +9,11 @@ public class BallsSceneTransition : MonoBehaviour {
     public string sceneName;
     public float transWait = 1.5f;
 
+    private void Start()
+    {
+        transAnimation.SetTrigger("Start");
+    }
+
     private void Update()
     {
         if(enemies.childCount == 0)
