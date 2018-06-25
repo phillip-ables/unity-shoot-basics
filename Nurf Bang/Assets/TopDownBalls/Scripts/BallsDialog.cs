@@ -11,8 +11,9 @@ public class BallsDialog : MonoBehaviour {
     public float buttonSpeed = 0.01f;
     public int buttonGrowth = 2;
     public Animator textDisplayAnimation;
+    public AudioSource laughingAudio;
+    public AudioSource breathingAudio;
 
-    private AudioSource auid0Source;
     private int textSize = 0;
     private int buttonSize = 400;
     private string[] sentences;
@@ -20,7 +21,7 @@ public class BallsDialog : MonoBehaviour {
     //Methods
     private void Start()
     {
-        audi0Source = GetComponent<AudioSource>();
+        laughingAudio.Play();
         continueButton.fontSize = 0;
         sentences = new string[] {
             "!HoW MaNy FiLtErS dO yOu HiDe BeHiNd My LoVe?",
@@ -56,6 +57,7 @@ public class BallsDialog : MonoBehaviour {
 
     public void NextSentence()
     {
+        breathingAudio.Play();
         textDisplayAnimation.SetTrigger("Change");
         textSize = 0;
         textDisplay.text = "";
