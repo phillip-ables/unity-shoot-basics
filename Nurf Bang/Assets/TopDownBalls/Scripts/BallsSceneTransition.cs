@@ -4,15 +4,23 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BallsSceneTransition : MonoBehaviour {
-    public Animator sceneAnimation;
+    public Animator transAnimation;
     public Transform enemies;
     public string sceneName;
+    public float transWait = 1.5f;
 
     private void Update()
     {
         if(enemies.childCount == 0)
         {
-            SceneManager.LoadScene(sceneName);
+            StartCoroutine(LoadScene());
         }
+    }
+
+    IEnumerator LoadScene()
+    {
+        transAnimation.SetTrigger("End");
+        yield return new WaitForSeconds(transWait);
+        SceneManager.LoadScene(sceneName);
     }
 }
