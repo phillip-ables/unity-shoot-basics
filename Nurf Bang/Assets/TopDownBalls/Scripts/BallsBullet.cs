@@ -6,7 +6,7 @@ public class BallsBullet : MonoBehaviour {
     //Variables
     public float bulletSpeed = 7.0f;
     public float maxDistance;
-    public float damage;
+    public float damage = 1.0f;
     public GameObject blood;
 
     private GameObject triggeringEnemy;
