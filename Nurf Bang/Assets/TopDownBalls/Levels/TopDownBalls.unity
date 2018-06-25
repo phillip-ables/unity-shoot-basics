@@ -445,8 +445,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a12931441941842b8d187e1ed9e697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneAnimation: {fileID: 320443998}
+  transAnimation: {fileID: 320443998}
   enemies: {fileID: 57907813}
+  sceneName: TopDownBallsMultiplier
+  transWait: 1.5
 --- !u!4 &1214721830
 Transform:
   m_ObjectHideFlags: 0
