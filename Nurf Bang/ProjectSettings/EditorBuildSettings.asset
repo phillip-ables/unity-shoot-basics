@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/TopDownBalls/Levels/TopDownBallsMultiplier.unity
     guid: 03ee89253ddf6b447bf3ab2cbaaa7336
   - enabled: 1
+    path: Assets/TopDownBalls/Levels/BallsBossBattle.unity
+    guid: 7bb08d08aefdf0041bfa47f710d7626a
+  - enabled: 1
     path: Assets/TopDownBalls/Levels/The_Awakening.unity
     guid: ec6b216e90e81ad4187411f11b32585d
   m_configObjects: {}

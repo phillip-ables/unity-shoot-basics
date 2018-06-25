@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TopDownBalls/Levels/TopDownBallsMultiplier.unity
+- path: Assets/TopDownBalls/Levels/BallsBossBattle.unity
   isLoaded: 1
   isActive: 1
