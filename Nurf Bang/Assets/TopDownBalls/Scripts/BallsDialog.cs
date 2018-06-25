@@ -13,6 +13,7 @@ public class BallsDialog : MonoBehaviour {
     public Animator textDisplayAnimation;
     public AudioSource laughingAudio;
     public AudioSource breathingAudio;
+    public Animator camShakeAnim;
 
     private int textSize = 0;
     private int buttonSize = 400;
@@ -58,6 +59,7 @@ public class BallsDialog : MonoBehaviour {
     public void NextSentence()
     {
         textDisplayAnimation.SetTrigger("Change");
+        CamShake();
         textSize = 0;
         textDisplay.text = "";
         continueButton.fontSize = textSize;
@@ -73,5 +75,10 @@ public class BallsDialog : MonoBehaviour {
             continueButton.text = "";
             laughingAudio.Stop();
         }
+    }
+
+    public void CamShake()
+    {
+        camShakeAnim.SetTrigger("Shake");
     }
 }
