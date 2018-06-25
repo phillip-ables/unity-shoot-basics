@@ -166,6 +166,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsBullet.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsCamera.cs" />
+    <Compile Include="Assets\TopDownBalls\Scripts\BallsCameraFX.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsDestroyGameObject.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsDialog.cs" />
     <Compile Include="Assets\TopDownBalls\Scripts\BallsEnemy.cs" />
