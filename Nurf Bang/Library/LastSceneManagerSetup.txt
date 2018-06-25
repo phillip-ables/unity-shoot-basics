@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/FPS_BOX/fbsBox.unity
+- path: Assets/TopDownBalls/Levels/The_Awakening.unity
   isLoaded: 1
   isActive: 1
