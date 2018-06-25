@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TopDownBalls/Levels/The_Awakening.unity
+- path: Assets/TopDownBalls/Levels/TopDownBalls.unity
   isLoaded: 1
   isActive: 1
