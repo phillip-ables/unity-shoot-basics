@@ -10,8 +10,6 @@ public class fpsCapsuleMovement : MonoBehaviour {
     public float jumpVelocity = 800.0f;
     public float maxSlope = 60.0f;
 
-    private float walkDeaccelerationValx;
-    private float walkDeaccelerationValy;
     private bool grounded = false;
     private Rigidbody rb;
     private Vector2 horizontalMovement;
@@ -35,8 +33,8 @@ public class fpsCapsuleMovement : MonoBehaviour {
             && Input.GetAxis("Vertical") == 0
             && grounded)
         {
-            horizontalMovement.x = Mathf.SmoothDamp(rb.velocity.x, 0, ref walkDeaccelerationValx, walkDeacceleration);
-            horizontalMovement.y = Mathf.SmoothDamp(rb.velocity.z, 0, ref walkDeaccelerationValy, walkDeacceleration);
+            horizontalMovement.x /= walkDeacceleration;
+            horizontalMovement.y /= walkDeacceleration;
         }
 
         velocity = new Vector3(horizontalMovement.x, 0, horizontalMovement.y);

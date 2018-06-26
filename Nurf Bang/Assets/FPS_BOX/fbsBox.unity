@@ -1312,8 +1312,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkAcceleration: 40
+  walkDeacceleration: 80
   cameraObject: {fileID: 377636543}
   maxWalkSpeed: 50
+  jumpVelocity: 3000
+  maxSlope: 60
 --- !u!1 &279722200
 GameObject:
   m_ObjectHideFlags: 0
