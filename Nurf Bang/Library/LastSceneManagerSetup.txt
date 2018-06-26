@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/FPS_BOX/Levels/fpsDungen.unity
+- path: Assets/TopDownBalls/Levels/TopDownBalls.unity
   isLoaded: 1
   isActive: 1
