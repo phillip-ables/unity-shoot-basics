@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TopDownBalls/Levels/BallsBirdHouse.unity
+- path: Assets/SimpleRaycast/SimpleRaycast.unity
   isLoaded: 1
   isActive: 1
